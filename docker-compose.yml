@@ -1,0 +1,17 @@
+version: '1.0.0'
+
+services:
+  backend_server:
+    image: server-image
+    ports:
+      - '8000:8000'
+    container_name: server_container
+    environment:
+      - PORT=8000
+
+  frontend_server: 
+    build: ./
+    ports:
+      - '5173:5173'
+      - '5010:5010'
+    container_name: frontend_server-container
