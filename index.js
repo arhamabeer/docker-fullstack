@@ -6,7 +6,6 @@ const path = require("path");
 const PORT = process.env.PORT || 5010;
 
 app.use(express.static("public"));
-app.use(express.static("main.tsx"));
 
 app.get("/", (req, res) => {
   return res.json("Hello from Docker Server! 🐋 ");
