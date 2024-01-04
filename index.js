@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5010;
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  return res.json("Hello from Docker Server! 🐋 ");
+  return res.json("Hello from Docker Server! 🐋🐬  ");
 });
 
 app.get("/client", (req, res) => {

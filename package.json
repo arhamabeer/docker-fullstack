@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server_start": "nodemon index.js",
-    "client_render": "yarn --cwd ./client run dev",
+    "client_render": "cd ./client && npm run dev",
     "dev_run": "concurrently --kill-others \"npm:server_start\" \"npm:client_render\" "
   },
   "author": "",
